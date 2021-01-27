@@ -11,7 +11,7 @@ public class Event {
 
     @Id
     @GeneratedValue
-    private int id;
+    private long id;
 
     @Column
     private Date date;
@@ -27,11 +27,11 @@ public class Event {
         this.payload = payload;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
